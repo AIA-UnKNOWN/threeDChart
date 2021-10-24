@@ -1,0 +1,141 @@
+header {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px;
+
+    .logo-container {
+      width: 50px;
+      height: 50px;
+      position: relative;
+
+      .diamond-1, .diamond-2 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $purpleWithOpacity;
+      }
+
+      .diamond-1 {
+        transform: rotate( 45deg ) translate( -3px, 3px );
+      }
+
+      .diamond-2 {
+        transform: rotate( 45deg ) translate( 3px, -3px );
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        font-size: 12px;
+        color: $white;
+      }
+    }
+
+    ul {
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+
+        &.active {
+          background: $purple;
+          border-radius: 50px;
+
+          a {
+            color: $white;
+            font-weight: 500;
+          }
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: $black;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px;
+
+    .content {
+
+      .goal {
+        font-size: 40px;
+        width: 430px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .encouragement {
+        font-size: 24px;
+        width: 350px;
+        margin-bottom: 45px;
+      }
+
+      button {
+        background: $purple;
+        color: $white;
+        border: none;
+        font-size: 20px;
+        padding: 10px 15px;
+        padding-right: 25px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 500;
+        
+        .fa-play-circle {
+          font-size: 35px;
+          margin-right: 25px;
+        }
+      }
+    }
+
+    .threeD-container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin-right: 100px;
+
+      .big-diamond-1, .big-diamond-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $purpleWithOpacity;
+      }
+
+      .big-diamond-1 {
+        transform: rotate( 45deg ) translate( -10px, 10px );
+      }
+
+      .big-diamond-2 {
+        transform: rotate( 45deg ) translate( 10px, -10px );
+      }
+
+      #chart {
+        height: 400px;
+        width: 600px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+      }
+    }
+  }
+
+}
